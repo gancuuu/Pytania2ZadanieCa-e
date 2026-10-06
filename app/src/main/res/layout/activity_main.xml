@@ -7,13 +7,67 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
 
+        <TextView
+            android:id="@+id/tvNumerPytania"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pytanie 1/5"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPytanie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Pytanie"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnOdpowiedz1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Odpowiedź 1" />
+
+        <Button
+            android:id="@+id/btnOdpowiedz2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Odpowiedź 2" />
+
+        <Button
+            android:id="@+id/btnOdpowiedz3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Odpowiedź 3" />
+
+        <Button
+            android:id="@+id/btnOdpowiedz4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Odpowiedź 4" />
+
+        <TextView
+            android:id="@+id/tvWynik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnPonownie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Zagraj ponownie"
+            android:visibility="gone" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
